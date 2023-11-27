@@ -1,0 +1,24 @@
+GET http://127.0.0.1:5000/items HTTP/1.1
+
+### GET single item
+GET http://127.0.0.1:5000/items/1 HTTP/1.1
+
+### Add single item
+POST http://127.0.0.1:5000/items HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"New Item"
+}
+
+### delete single item
+DELETE  http://127.0.0.1:5000/items/1 HTTP/1.1
+
+
+### update single item
+PUT http://127.0.0.1:5000/items/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Updated Item"
+}
